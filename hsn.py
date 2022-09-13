@@ -16,6 +16,8 @@ import streamlit as st
 import pandas as pd
 
 nltk.download('stopwords')
+nltk.download('punkt')
+
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
 
