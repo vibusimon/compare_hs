@@ -1,5 +1,3 @@
-from email import header
-from re import I
 from tensorflow.keras import Sequential 
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.models import load_model
@@ -17,6 +15,7 @@ import json
 import streamlit as st
 import pandas as pd
 
+nltk.download('stopwords')
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
 
