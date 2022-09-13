@@ -17,6 +17,7 @@ import pandas as pd
 
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('wordnet')
 
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
